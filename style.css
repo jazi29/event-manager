@@ -17,11 +17,13 @@ label {
 body {
   margin: 0 auto;
   color: white;
-  font-family: roboto;
+  font-family: "Roboto", sans-serif;
 }
 .container {
-  max-width: 1440px;
-  height: 780px;
+  /* max-width: 1440px; */
+  width: 100%;
+  /* height: 780px; */
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,11 +45,7 @@ header img {
   width: 35px;
   height: 35px;
 }
-.logo:hover {
-  opacity: 50%;
-  transition: 0.3s;
-}
-.account:hover {
+a:hover {
   opacity: 50%;
   transition: 0.3s;
 }
@@ -136,8 +134,17 @@ footer {
 
 /* Account styles */
 .login-container {
-  width: 290px;
+  max-width: 320px;
+  width: 100%;
   height: 340px;
+}
+.register-container {
+  max-width: 320px;
+  width: 100%;
+  height: 400px;
+}
+.login-container,
+.register-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -145,14 +152,38 @@ footer {
   border: 1px solid #121212;
   border-radius: 5px;
 }
+#login-modal,
+#register-modal {
+  display: none;
+}
+#register-modal {
+  display: none;
+}
+#event-block {
+  display: block;
+}
+
 .login-wrapper {
-  width: 250px;
+  width: 280px;
   height: 320px;
+}
+.register-wrapper {
+  width: 280px;
+  height: 380px;
+}
+.login-wrapper,
+.register-wrapper {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
   gap: 10px;
+}
+
+a,
+button,
+.submit {
+  cursor: pointer;
 }
 .action-button {
   display: flex;
@@ -182,26 +213,34 @@ form {
   margin: 0;
 }
 input {
+  padding-left: 5px;
+  border-radius: 3px;
   width: 250px;
   height: 38px;
+  border: none;
+  border: 1px solid #121212;
 }
 label {
   margin-bottom: 5px;
-  border-radius: 8px;
-  border: none;
 }
 
 .submit {
   width: 120px;
   height: 40px;
   border-radius: 5px;
-  background-color: #4299e1;
+  background-color: #4e5e8a;
+  color: white;
+  font-weight: 700;
   border: none;
 }
 
 .active {
-  /* background: linear-gradient(#070858, #90cdf4); */
   background-color: #4e5e8a;
   color: white;
   font-weight: 700;
+  border: none;
+}
+
+.footer-year {
+  margin-left: -138px;
 }
