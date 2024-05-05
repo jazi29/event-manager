@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Event Manager System</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
+    <title>Event Manager System</title>
   </head>
   <body>
     <div class="container">
@@ -22,7 +22,85 @@
       <main>
         <h1>Events</h1>
 
-        <div class="event-more" id="event-more"></div>
+        <div class="event-more" id="event-more">
+          <div class="event-more-wrapper">
+            <div class="close-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="35"
+                height="35"
+                viewBox="0,0,300,150"
+                style="fill: #ffffff"
+              >
+                <g
+                  fill="#ffffff"
+                  fill-rule="nonzero"
+                  stroke="none"
+                  stroke-width="1"
+                  stroke-linecap="butt"
+                  stroke-linejoin="miter"
+                  stroke-miterlimit="10"
+                  stroke-dasharray=""
+                  stroke-dashoffset="0"
+                  font-family="none"
+                  font-weight="none"
+                  font-size="none"
+                  text-anchor="none"
+                  style="mix-blend-mode: normal"
+                >
+                  <g transform="scale(8.53333,8.53333)">
+                    <path
+                      d="M7,4c-0.25587,0 -0.51203,0.09747 -0.70703,0.29297l-2,2c-0.391,0.391 -0.391,1.02406 0,1.41406l7.29297,7.29297l-7.29297,7.29297c-0.391,0.391 -0.391,1.02406 0,1.41406l2,2c0.391,0.391 1.02406,0.391 1.41406,0l7.29297,-7.29297l7.29297,7.29297c0.39,0.391 1.02406,0.391 1.41406,0l2,-2c0.391,-0.391 0.391,-1.02406 0,-1.41406l-7.29297,-7.29297l7.29297,-7.29297c0.391,-0.39 0.391,-1.02406 0,-1.41406l-2,-2c-0.391,-0.391 -1.02406,-0.391 -1.41406,0l-7.29297,7.29297l-7.29297,-7.29297c-0.1955,-0.1955 -0.45116,-0.29297 -0.70703,-0.29297z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="event-hero-image">
+              <img
+                src="https://ticketon.kz/media/upload/46459u54364_afisha_0.jpg"
+                alt="scorpions"
+                class="event-image"
+              />
+            </div>
+            <div class="event-info-details">
+              <div class="event-info">
+                <div class="event-text">
+                  <h3>Concert</h3>
+                  <p class="event-description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Facere vel officiis lab
+                  </p>
+                </div>
+
+                <div class="event-params">
+                  <div class="event-date">
+                    <img
+                      width="32"
+                      height="32"
+                      src="https://img.icons8.com/material-outlined/24/FFFFFF/calendar--v1.png"
+                      alt="calendar--v1"
+                    />
+                    <p>020393</p>
+                  </div>
+
+                  <div class="event-place">
+                    <img
+                      width="24"
+                      height="24"
+                      src="https://img.icons8.com/material-outlined/24/FFFFFF/place-marker--v1.png"
+                      alt="place-marker--v1"
+                    />
+                    <p>Almaty</p>
+                  </div>
+                </div>
+              </div>
+              <button class="reserv">Buy</button>
+            </div>
+          </div>
+        </div>
 
         <div id="login-modal">
           <div class="login-container">
@@ -36,7 +114,7 @@
 
               <form action="#">
                 <div class="form-details">
-                  <label for="mail">Email:</label>
+                  <label for="mail">Username:</label>
                   <input
                     type="email"
                     id="email"
@@ -65,14 +143,14 @@
                 <button class="register-btn active">Register</button>
               </div>
 
-              <form action="#">
+              <form onsubmit="event.preventDefault()">
                 <div class="form-details">
                   <label for="password">Username:</label>
                   <input
                     type="text"
                     id="username"
                     name="username"
-                    placeholder="Username"
+                    placeholder="username"
                   /><br />
                   <label for="mail">Email:</label>
                   <input
@@ -80,6 +158,7 @@
                     id="email"
                     name="email"
                     placeholder="lilpeep@mail.com"
+                    checked="required"
                   /><br />
                   <label for="password">Password:</label>
                   <input
@@ -89,7 +168,12 @@
                     placeholder="********"
                   /><br />
                 </div>
-                <input type="submit" value="Register" class="submit" />
+                <input
+                  type="submit"
+                  value="Register"
+                  class="submit"
+                  id="submit"
+                />
               </form>
             </div>
           </div>
@@ -104,31 +188,6 @@
                 class="event-image"
               />
               <input type="submit" value="Buy" class="buy-button" />
-
-              <!-- <div class="event-info">
-                <div class="event-description">
-                  <h4>Concert</h4>
-                  <div class="event-date">
-                    <img
-                      width="32"
-                      height="32"
-                      src="https://img.icons8.com/material-outlined/24/FFFFFF/calendar--v1.png"
-                      alt="calendar--v1"
-                    />
-                    <p>020393</p>
-                  </div>
-                </div>
-
-                <div class="event-place">
-                  <img
-                    width="24"
-                    height="24"
-                    src="https://img.icons8.com/material-outlined/24/FFFFFF/place-marker--v1.png"
-                    alt="place-marker--v1"
-                  />
-                  <p>Almaty</p>
-                </div>
-              </div> -->
             </div>
             <div class="event">
               <img
