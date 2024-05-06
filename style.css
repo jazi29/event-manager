@@ -40,6 +40,7 @@ header {
   height: 80px;
   background: #1a202c;
   border: 1px solid #121212;
+  position: relative;
 }
 header img {
   width: 35px;
@@ -336,4 +337,32 @@ label {
   border-radius: 5px;
   font-weight: 700;
   cursor: pointer;
+}
+
+.profile {
+  position: absolute;
+  top: 100%;
+  right: 2%;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.profile-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
+
+#profile {
+  display: none;
+}
+.log-out {
+  background-color: #4e5e8a;
+  width: 80px;
+  height: 30px;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 5px;
 }
