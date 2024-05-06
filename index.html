@@ -18,6 +18,15 @@
             <img src="account.png" alt="account" onclick="showLogin()" />
           </a>
         </div>
+        <div class="profile" id="profile">
+          <div class="profile-wrapper">
+            <div class="profile-username">
+              <h3>Lil Peep</h2>
+            </div>
+            <button type="submit" class="log-out">Log out</button>
+          </div>
+        </div>
+          
       </header>
       <main>
         <h1>Events</h1>
@@ -112,14 +121,15 @@
                 </button>
               </div>
 
-              <form action="#">
+              <form onsubmit="event.preventDefault()">
                 <div class="form-details">
                   <label for="mail">Username:</label>
                   <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="lilpeep@mail.com"
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="lilpeep5"
+                    checked="required"
                   /><br />
                   <label for="password">Password:</label>
                   <input
@@ -127,6 +137,7 @@
                     id="password"
                     name="password"
                     placeholder="********"
+                    checked="required"
                   /><br /><br />
                 </div>
                 <input type="submit" value="Login" class="submit" />
@@ -145,19 +156,20 @@
 
               <form onsubmit="event.preventDefault()">
                 <div class="form-details">
+                  <label for="name">Name:</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Lil Peep"
+                    checked="required"
+                  /><br />
                   <label for="password">Username:</label>
                   <input
                     type="text"
                     id="username"
                     name="username"
                     placeholder="username"
-                  /><br />
-                  <label for="mail">Email:</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="lilpeep@mail.com"
                     checked="required"
                   /><br />
                   <label for="password">Password:</label>
@@ -166,6 +178,7 @@
                     id="password"
                     name="password"
                     placeholder="********"
+                    checked="required"
                   /><br />
                 </div>
                 <input
