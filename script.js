@@ -80,15 +80,15 @@ closeButton.addEventListener("click", function () {
 // Register and login
 
 const username = document.querySelector("#username");
-const email = document.querySelector("#email");
+const name = document.querySelector("#name");
 const password = document.querySelector("#password");
 const submit = document.querySelector("#submit");
 
 let users = {};
 
-function User(username, email, password) {
+function User(username, name, password) {
   this.username = username;
-  this.email = email;
+  this.name = this.name;
   this.password = password;
 }
 
@@ -98,14 +98,18 @@ function createID(users) {
 
 submit.addEventListener("click", () => {
   const loginUser = username.value;
-  const emailUser = email.value;
+  const nameUser = name.value;
   const passwordUser = password.value;
 
-  const user = new User(loginUser, emailUser, passwordUser);
+  const user = new User(loginUser, nameUser, passwordUser);
 
   const userID = "User" + createID(users);
   users[userID] = user;
   console.log(users);
 
-  alert(`${loginUser}, you have successfully registered!`);
+  alert(`${nameUser}, you have successfully registered!`);
+
+  profile.style.display = "block";
 });
+
+const profile = document.getElementById("profile");
