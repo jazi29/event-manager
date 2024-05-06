@@ -1,0 +1,58 @@
+[
+  {
+    "image": "https://ticketon.kz/media/upload/46459u54364_afisha_0.jpg",
+    "name": "Scorpions",
+    "description": "Scorpions are a German hard rock band formed in Hanover in 1965 by guitarist Rudolf Schenker.",
+    "date": "28 may 20:00",
+    "place": "Almaty, Almaty Arena"
+  },
+  {
+    "image": "https://ticketon.kz/media/upload/44908u56439_500_700_white_6630a5892f00e-4.jpg",
+    "name": "Pulse kino",
+    "description": "The Pulse Kino group (Almaty), today is the number one group in Kazakhstan in terms of the number of concerts and tours.",
+    "date": "20 june 19:00",
+    "place": "Kostanay"
+  },
+  {
+    "image": "https://ticketon.kz/media/upload/46454u30705_lazernoe-neonovoe-shou-igra-2-v-atyrau.jpg",
+    "name": "Laser neon show",
+    "description": "Very soon, in your city, the boy Tyoma will go on a new adventure in virtual space.",
+    "date": "6-7 april 18:00",
+    "place": "Atyrau"
+  },
+  {
+    "image": "https://ticketon.kz/files/media/48514u56102_lizwi-south-africa-almaty-alasynda.jpg",
+    "name": "LIZWI (South Africa)",
+    "description": "For the first time in Almaty, in honor of the opening of the summer season at the Teplitsa restaurant - Lizwi!",
+    "date": "8 may 20:00",
+    "place": "Almaty"
+  },
+  {
+    "image": "https://ticketon.kz/media/upload/47781u56102_tribyut-kontsert-marlene-dietrich_0.jpg",
+    "name": "MARLENE DIETRICH",
+    "description": "Songs from the repertoire of Marlene Dietrich performed by Eva Becher & drive cabaret “CINEMA and GERMANS” and actors of the German Theater",
+    "date": "6 may 19:00",
+    "place": "Almaty"
+  },
+  {
+    "image": "https://ticketon.kz/media/upload/45759u56439_thumbnail_-petropavlovsk-nov-perenos-.jpg",
+    "name": "Rock-n-rust. Music Concert",
+    "description": "Immerse yourself with us in the unusual atmosphere of what is happening.",
+    "date": "7 may 19:00",
+    "place": "Petropavlovsk"
+  },
+  {
+    "image": "https://ticketon.kz/media/upload/48686u30705_kontsert-gruppy-deadline.jpg",
+    "name": "DEADLINE",
+    "description": "DEADLINE celebrate this special day with an incredible show at the DORFFMAN CLUB!",
+    "date": "8 may 20:00",
+    "place": "Astana"
+  },
+  {
+    "image": "https://ticketon.kz/media/upload/47234u55201_louna-tour-2024_74645louna-tour-2024-almaty.jpg",
+    "name": "LOUNA TOUR 2024",
+    "description": "LOUNA's big tour dedicated to the band's 15th anniversary!",
+    "date": "11 may 20:00",
+    "place": "Oskemen"
+  }
+]
