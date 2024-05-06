@@ -3,30 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
     <title>Event Manager System</title>
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
       <header>
         <div class="logo">
-          <a href="/"><img src="logo.png" alt="favicon" /></a>
+          <a href="index.html"><img src="icons/logo.png" alt="favicon" /></a>
         </div>
         <div class="account" id="account">
           <a>
-            <img src="account.png" alt="account" onclick="showLogin()" />
+            <img src="icons/account.png" alt="account" onclick="showLogin()" />
           </a>
         </div>
         <div class="profile" id="profile">
           <div class="profile-wrapper">
             <div class="profile-username">
-              <h3>Lil Peep</h2>
+              <h3 class="profile-element"></h3>
             </div>
-            <button type="submit" class="log-out">Log out</button>
+            <button type="button" class="tickets">Tickets</button>
+            <button type="submit" class="log-out" id="log-out">Log out</button>
           </div>
         </div>
-          
       </header>
       <main>
         <h1>Events</h1>
@@ -69,19 +69,17 @@
             </div>
             <div class="event-hero-image">
               <img
-                src="https://ticketon.kz/media/upload/46459u54364_afisha_0.jpg"
+                src=""
                 alt="scorpions"
                 class="event-image"
+                id="event-image"
               />
             </div>
             <div class="event-info-details">
               <div class="event-info">
                 <div class="event-text">
-                  <h3>Concert</h3>
-                  <p class="event-description">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Facere vel officiis lab
-                  </p>
+                  <h3 id="event-name"></h3>
+                  <p class="event-description" id="event-description"></p>
                 </div>
 
                 <div class="event-params">
@@ -92,7 +90,7 @@
                       src="https://img.icons8.com/material-outlined/24/FFFFFF/calendar--v1.png"
                       alt="calendar--v1"
                     />
-                    <p>020393</p>
+                    <p id="event-date"></p>
                   </div>
 
                   <div class="event-place">
@@ -102,11 +100,11 @@
                       src="https://img.icons8.com/material-outlined/24/FFFFFF/place-marker--v1.png"
                       alt="place-marker--v1"
                     />
-                    <p>Almaty</p>
+                    <p id="event-place"></p>
                   </div>
                 </div>
               </div>
-              <button class="reserv">Buy</button>
+              <button class="reserv" id="reserv">to Book</button>
             </div>
           </div>
         </div>
@@ -126,21 +124,24 @@
                   <label for="mail">Username:</label>
                   <input
                     type="text"
-                    id="username"
+                    id="login-username"
                     name="username"
                     placeholder="lilpeep5"
-                    checked="required"
                   /><br />
                   <label for="password">Password:</label>
                   <input
                     type="password"
-                    id="password"
+                    id="login-password"
                     name="password"
                     placeholder="********"
-                    checked="required"
                   /><br /><br />
                 </div>
-                <input type="submit" value="Login" class="submit" />
+                <input
+                  type="submit"
+                  value="Login"
+                  class="submit"
+                  id="login-submit"
+                />
               </form>
             </div>
           </div>
@@ -162,7 +163,7 @@
                     id="name"
                     name="name"
                     placeholder="Lil Peep"
-                    checked="required"
+                    required
                   /><br />
                   <label for="password">Username:</label>
                   <input
@@ -170,7 +171,7 @@
                     id="username"
                     name="username"
                     placeholder="username"
-                    checked="required"
+                    required
                   /><br />
                   <label for="password">Password:</label>
                   <input
@@ -178,7 +179,7 @@
                     id="password"
                     name="password"
                     placeholder="********"
-                    checked="required"
+                    required
                   /><br />
                 </div>
                 <input
@@ -220,7 +221,7 @@
             </div>
             <div class="event">
               <img
-                src="https://ticketon.kz/media/upload/48759u56102_stars-on-ice-almaty-alasynda.jpeg"
+                src="https://ticketon.kz/files/media/48514u56102_lizwi-south-africa-almaty-alasynda.jpg"
                 alt="ice"
                 class="event-image"
               />
